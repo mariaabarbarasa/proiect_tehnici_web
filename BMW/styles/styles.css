@@ -1,0 +1,199 @@
+body
+{
+    font-family: "Open Sans", sans-serif;
+}
+.titlu
+{
+    padding: 20px;
+    background-color: rgb(136, 180, 236);
+    font-family: "Open Sans", Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar 
+{
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+.navbar a 
+{
+    float: left;
+    font-size: 16px;
+    color:  rgb(136, 180, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown 
+{
+    float: left;
+    width: 160px;
+    align-items: center;
+    overflow: hidden;
+}
+.dropdown .dropbtn 
+{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:  rgb(136, 180, 236);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
+    background-color: #333;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color:  rgb(136, 180, 236);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.mesaj_inceput
+{
+    padding-left: 30px;
+    margin: 0 auto; 
+}
+.logo img 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 75%;
+    display: inline;
+    overflow: hidden;
+}
+.imagine_bmw_mare
+{
+    padding-top: 1px;
+    background: #e8eced url('../images/background2.jpg') no-repeat center;
+    background-size: cover;
+    height: 600px;
+
+}
+.imagine_bmw_mare h2 
+{
+    margin: 180px 0 40px 0;
+}
+#primul_text 
+{
+    background-color: rgba(179, 217, 228, 0.95);
+    padding: 60px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+#primul_text h3 
+{
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 3px solid rgb(136, 180, 236);
+    padding: 0 0 10px 0;
+    font-family: "Open Sans", sans-serif;
+}
+#primul_text a img 
+{
+    margin: 40px 0px;
+    background-size: cover;
+    height: 600px;
+    padding-top: 1px;
+    padding-right: 50px;
+    border-radius: 100px; 
+}
+#primul_text a img:hover 
+{
+    transform: scale(1.1); 
+}
+.link 
+{
+    border: 1px solid rgb(102, 113, 128);
+    color: rgb(102, 113, 128);
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.link:hover 
+{
+    background-color: rgb(102, 113, 128);
+    color: #fff;
+}
+.patrucoloane
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:rgba(179, 217, 228, 0.95);
+}
+.col1
+{
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid rgb(102, 113, 128);
+    text-align: center;
+}
+.col1 img
+{
+    max-width: 100%;
+    height: auto;
+}
+.final_pagina
+{
+    text-align: center;
+    padding: 1px 16px;
+    background-color: #333;
+}
+.scris_final_pagina
+{
+    padding-left: 100px;
+    color: #f9f9f9;
+    font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 600px) 
+{
+    #primul_text a img 
+    {
+        margin: 40px 0px;
+        background-size: cover;
+        width: 300px;
+        height: auto;
+        padding-top: 1px;
+        padding-right: 50px;
+        border-radius: 100px; 
+    }
+    .imagine_bmw_mare
+    {
+        padding-top: 1px;
+        background: #e8eced url('../images/background2.jpg') no-repeat center;
+        background-size: cover;
+        width: 396px;
+        height: 350px;
+    }
+}

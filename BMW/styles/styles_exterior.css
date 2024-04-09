@@ -1,0 +1,196 @@
+body
+{
+    font-family: "Open Sans", sans-serif;
+}
+.titlu 
+{
+    padding: 20px;
+    background-color: rgb(136, 180, 236);
+    font-family: "Open Sans", Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar 
+{
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.navbar a 
+{
+    float: left;
+    font-size: 16px;
+    color: rgb(136, 180, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown 
+{
+    float: left;
+    width: 160px;
+    align-items: center;
+    overflow: hidden;
+}
+.dropdown .dropbtn 
+{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(136, 180, 236);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn 
+{
+    background-color: #333;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: rgb(136, 180, 236);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.mesaj_inceput 
+{
+    padding-left: 10px;
+    margin: 0 auto;
+}
+.logo img 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 75%;
+    display: inline;
+    overflow: hidden;
+}
+.container_exterior
+{
+    display: flex;
+}
+.text_parte_stanga 
+{
+    background-color: rgba(179, 217, 228, 0.95);
+    flex-basis: 300px;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+.text_parte_stanga_2
+{
+    color: rgb(102, 113, 128);
+}
+.partea_dreapta
+{
+    background-color: rgba(133, 163, 171, 0.95);
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+}
+@keyframes miscare_casuta 
+{
+    0% 
+    {
+        transform: translateY(0%);
+    }
+    100% 
+    {
+        transform: translateY(100%);
+    }
+}
+.partea_dreapta img:hover,
+.text_parte_stanga img:hover 
+{
+    transform: scale(0.8) rotate(180deg); 
+    transition: transform 0.5s ease; 
+}
+.text_casuta 
+{
+    background-color: #fff;
+    padding: 10px;
+    border: 3px solid rgb(102, 113, 128);;
+    margin-bottom: 20px;
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+.text_casuta p 
+{
+    animation: miscare_casuta 5s infinite linear;
+}
+.partea_dreapta img 
+{
+    width: 400px; 
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+}
+.partea_dreapta img:not(:last-child) 
+{
+    margin-bottom: 20px; 
+}
+.final_pagina 
+{
+    text-align: center;
+    padding: 1px 16px;
+    background-color: #333;
+}
+.scris_final_pagina 
+{
+    padding-left: 100px;
+    color: #f9f9f9;
+    font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 768px) 
+{
+    .container_exterior 
+    {
+        flex-direction: column;
+    }
+    .text_parte_stanga, .partea_dreapta 
+    {
+        flex-basis: auto;
+        width: 100%;
+        padding: 10px; 
+    }
+    .partea_dreapta img 
+    {
+        max-width: 100%; 
+        height: auto;
+    }
+    .text_casuta 
+    {
+        font-size: 14px; 
+        
+    }
+}
+

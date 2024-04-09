@@ -1,0 +1,204 @@
+body
+{
+    font-family: "Open Sans", sans-serif;
+}
+.titlu
+{
+    padding: 20px;
+    background-color: rgb(136, 180, 236);
+    font-family: "Open Sans", Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar 
+{
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+.navbar a 
+{
+    float: left;
+    font-size: 16px;
+    color:  rgb(136, 180, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown 
+{
+    float: left;
+    width: 160px;
+    align-items: center;
+    overflow: hidden;
+}
+.dropdown .dropbtn 
+{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:  rgb(136, 180, 236);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
+    background-color: #333;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color:  rgb(136, 180, 236);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.mesaj_inceput
+{
+    padding-left: 10px;
+    margin: 0 auto; 
+}
+.logo img 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 75%;
+    display: inline;
+    overflow: hidden;
+}
+.sectiune1
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(179, 217, 228, 0.95);
+}
+.linie_poze
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.linie_chenare
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.poza
+{
+    max-width: 20%;
+    animation: rotatie 4s infinite linear;
+    transform-style: preserve-3d;
+
+}
+.poza img 
+{
+    max-width: 100%;
+    height: auto;
+}
+@keyframes rotatie 
+{
+    0% 
+    {
+        transform: rotateY(0deg); 
+    }
+    75% 
+    {
+        transform: rotateY(360deg);
+    }
+    100% 
+    {
+        transform: rotateY(360deg); 
+    }
+}
+.caseta
+{
+    padding: 20px;
+    border: 5px solid #000;
+    margin: 30px 20px;
+    background-color: whitesmoke;
+    max-width: 30%;
+}
+.titlul_adresei 
+{
+    padding: 20px;
+    color: #f9f9f9;
+    text-align: left;
+    background-color: #333;
+}
+.sectiune_adresa1
+{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(179, 217, 228, 0.95);
+}
+.adresa
+{
+    padding: 1px;
+}
+.final_pagina
+{
+    text-align: center;
+    padding: 1px 16px;
+    background-color: #333;
+}
+.scris_final_pagina
+{
+    padding-left: 100px;
+    color: #f9f9f9;
+    font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 600px) 
+{
+    .linie_chenare
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 35%;
+    }
+    .sectiune_adresa1
+    {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(179, 217, 228, 0.95);
+        width:355px;
+        height: auto;
+    }
+    .adresa
+    {
+        padding-right: 500px;
+        width: 1px;
+        height: auto;
+    }
+}
